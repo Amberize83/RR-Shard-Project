@@ -3,7 +3,7 @@
 1. Using the VM(Virtual Mechine) use a web browser to go to this website: https://github.com/gustanik/CNA350
 2. Download into zip file
 3. Extact the file so it can be accessed as readible file
-4. cd into the folder ```"cd ~/Downloads/CNA350-master/maxscale"```
+4. cd into the folder you extracted the file to ```"~/Downloads/CNA350-master/maxscale"```
 5. Run this command ```docker-compose up -d```
 6. Run this command```mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_two.zipcodes_two LIMIT 50;"```
 7. Run this command ```mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_one.zipcodes_one LIMIT 50;"```
@@ -12,7 +12,7 @@
 
 Zipcode block
 ```
-ubuntudesktop@ubuntu:~/Downloads/CNA350-master/maxscale$ mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_two.zipcodes_two LIMIT 50;"
+ubuntudesktop@ubuntu:~/Downloads/CNA350-master/maxscale$ mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_one.zipcodes_one LIMIT 50;"
 
 ubuntudesktop@ubuntu:~/Downloads/CNA350-master/maxscale$ mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_two.zipcodes_two LIMIT 50;"
 
@@ -92,7 +92,7 @@ mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_one.z
 
 ### Output commands
 mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_two.zipcodes_two LIMIT 50;"
-
++---------+-------------+---------------+-------+--------------+-----------+------------+------------------------+---------------+-----------------+---------------------+------------+
 | Zipcode | ZipCodeType | City          | State | LocationType | Coord_Lat | Coord_Long | Location               | Decommisioned | TaxReturnsFiled | EstimatedPopulation | TotalWages |
 +---------+-------------+---------------+-------+--------------+-----------+------------+------------------------+---------------+-----------------+---------------------+------------+
 |   42040 | STANDARD    | FARMINGTON    | KY    | PRIMARY      | 36.67     | -88.53     | NA-US-KY-FARMINGTON    | FALSE         | 465             | 896                 | 11562973   |
