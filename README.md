@@ -1,4 +1,3 @@
-Output of command 
 ```ubuntudesktop@ubuntu:~$ cd Downloads
 ubuntudesktop@ubuntu:~/Downloads$ cd CNA350-master/maxscale
 ubuntudesktop@ubuntu:~/Downloads/CNA350-master/maxscale$ sudo docker-compose up -d
@@ -15,6 +14,7 @@ Starting maxscale_maxscale_1 ...
 Starting maxscale_maxscale_1 ... done
 phpmyadmin is up-to-date
 
+Output of command 
 mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_one.zipcodes_one LIMIT 50;"
 +---------+-------------+--------------------+-------+--------------+-----------+------------+-----------------------------+---------------+-----------------+---------------------+------------+
 | Zipcode | ZipCodeType | City               | State | LocationType | Coord_Lat | Coord_Long | Location                    | Decommisioned | TaxReturnsFiled | EstimatedPopulation | TotalWages |
