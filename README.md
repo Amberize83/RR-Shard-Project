@@ -1,3 +1,21 @@
+# Real World Sharding
+## Installation Steps
+1. Using the VM(Virtual Mechine) use a web browser to go to this website: https://github.com/gustanik/CNA350
+2. Download into zip file
+3. Extact the file so it can be accessed as readible file
+4. cd into the folder ```"cd ~/Downloads/CNA350-master/maxscale"```
+5. Run this command ```docker-compose up -d```
+6. Run this command```mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_two.zipcodes_two LIMIT 50;"```
+7. Run this command ```mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_one.zipcodes_one LIMIT 50;"```
+8. Check from phpadmin by going into xxx.xxx.xxx.xxx:8080 where xxx.xxx.xxx.xxx is on your vm's ip address
+
+
+Zipcode block
+```
+ubuntudesktop@ubuntu:~/Downloads/CNA350-master/maxscale$ mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_two.zipcodes_two LIMIT 50;"
+
+ubuntudesktop@ubuntu:~/Downloads/CNA350-master/maxscale$ mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_two.zipcodes_two LIMIT 50;"
+
 ```ubuntudesktop@ubuntu:~$ cd Downloads
 ubuntudesktop@ubuntu:~/Downloads$ cd CNA350-master/maxscale
 ubuntudesktop@ubuntu:~/Downloads/CNA350-master/maxscale$ sudo docker-compose up -d
@@ -14,7 +32,7 @@ Starting maxscale_maxscale_1 ...
 Starting maxscale_maxscale_1 ... done
 phpmyadmin is up-to-date
 
-Output of command 
+### Output commands
 mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_one.zipcodes_one LIMIT 50;"
 +---------+-------------+--------------------+-------+--------------+-----------+------------+-----------------------------+---------------+-----------------+---------------------+------------+
 | Zipcode | ZipCodeType | City               | State | LocationType | Coord_Lat | Coord_Long | Location                    | Decommisioned | TaxReturnsFiled | EstimatedPopulation | TotalWages |
@@ -72,36 +90,9 @@ mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_one.z
 +---------+-------------+--------------------+-------+--------------+-----------+------------+-----------------------------+---------------+-----------------+---------------------+------------+
 ```
 
+### Output commands
 mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_two.zipcodes_two LIMIT 50;"
-10004 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	1967 	2909 	333623384
-10005 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	4697 	6293 	791578339
-10006 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	2236 	2849 	240075649
-10007 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	3551 	5396 	1143186856
-10008 	PO BOX 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	550 	732 	27103411
-10009 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	31275 	42731 	1572036810
-10010 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	17401 	22785 	2084544435
-10011 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	30434 	38784 	1264531973
-10012 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	13415 	17738 	1529644615
-10013 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	15981 	24199 	450956340
-10014 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	19374 	24292 	
-10016 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	31673 	40683 	1412438620
-10017 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	15803 	19975 	1685441363
-10018 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	4416 	5928 	810026753
-10019 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	24515 	31889 	
-10020 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	1134 	1926 	207363546
-10021 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.77 	-73.95 	NA-US-NY-NEW YORK 	FALSE 	29820 	42627 	1022024689
-10022 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	20815 	29014 	731534552
-10023 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	34334 	48044 	1270483799
-10024 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	31925 	47261 	1108944328
-10025 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	47778 	70190 	1675737238
-10026 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	16054 	24221 	647150670
-10027 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	25372 	37948 	918919244
-10028 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	25557 	36525 	964357485
-10029 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	31490 	48403 	1050141146
 
-
-
-+---------+-------------+---------------+-------+--------------+-----------+------------+------------------------+---------------+-----------------+---------------------+------------+
 | Zipcode | ZipCodeType | City          | State | LocationType | Coord_Lat | Coord_Long | Location               | Decommisioned | TaxReturnsFiled | EstimatedPopulation | TotalWages |
 +---------+-------------+---------------+-------+--------------+-----------+------------+------------------------+---------------+-----------------+---------------------+------------+
 |   42040 | STANDARD    | FARMINGTON    | KY    | PRIMARY      | 36.67     | -88.53     | NA-US-KY-FARMINGTON    | FALSE         | 465             | 896                 | 11562973   |
@@ -155,3 +146,4 @@ mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_two.z
 |   42142 | PO BOX      | GLASGOW       | KY    | PRIMARY      | 36.99     | -85.92     | NA-US-KY-GLASGOW       | FALSE         | 493             | 812                 | 12735248   |
 |   42156 | STANDARD    | LUCAS         | KY    | PRIMARY      | 36.88     | -86.03     | NA-US-KY-LUCAS         | FALSE         |                 |                     |            |
 +---------+-------------+---------------+-------+--------------+-----------+------------+------------------------+---------------+-----------------+---------------------+------------+
+
