@@ -10,12 +10,13 @@
 8. Check from phpadmin by going into xxx.xxx.xxx.xxx:8080 where xxx.xxx.xxx.xxx is on your vm's ip address
 
 
-Zipcode block
+##Zipcode block
 ```
 ubuntudesktop@ubuntu:~/Downloads/CNA350-master/maxscale$ mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_one.zipcodes_one LIMIT 50;"
 
 ubuntudesktop@ubuntu:~/Downloads/CNA350-master/maxscale$ mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_two.zipcodes_two LIMIT 50;"
 
+##Code block
 ```ubuntudesktop@ubuntu:~$ cd Downloads
 ubuntudesktop@ubuntu:~/Downloads$ cd CNA350-master/maxscale
 ubuntudesktop@ubuntu:~/Downloads/CNA350-master/maxscale$ sudo docker-compose up -d
