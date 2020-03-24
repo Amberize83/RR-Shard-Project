@@ -2,7 +2,7 @@
 ## Installation Steps
 1. Using the VM(Virtual Mechine) use a web browser to go to this website: https://github.com/gustanik/CNA350
 2. Download into zip file
-3. Extact the file so it can be accessed as readible file
+3. Extract the file so it can be accessed as readible file
 4. cd into the folder you extracted the file to ```"~/Downloads/CNA350-master/maxscale"```
 5. Run this command ```docker-compose up -d```
 6. Run this command```mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_two.zipcodes_two LIMIT 50;"```
