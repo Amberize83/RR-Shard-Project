@@ -1,5 +1,20 @@
 Output of command 
-```
+```ubuntudesktop@ubuntu:~$ cd Downloads
+ubuntudesktop@ubuntu:~/Downloads$ cd CNA350-master/maxscale
+ubuntudesktop@ubuntu:~/Downloads/CNA350-master/maxscale$ sudo docker-compose up -d
+[sudo] password for ubuntudesktop: 
+Starting maxscale_master2_1 ... 
+Starting maxscale_master_1 ... 
+Starting maxscale_master2_1
+Starting maxscale_master_1 ... done
+Starting maxscale_slave1_1 ... 
+Starting maxscale_master2_1 ... done
+Starting maxscale_slave2_1 ... 
+Starting maxscale_slave2_1 ... done
+Starting maxscale_maxscale_1 ... 
+Starting maxscale_maxscale_1 ... done
+phpmyadmin is up-to-date
+
 mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_one.zipcodes_one LIMIT 50;"
 +---------+-------------+--------------------+-------+--------------+-----------+------------+-----------------------------+---------------+-----------------+---------------------+------------+
 | Zipcode | ZipCodeType | City               | State | LocationType | Coord_Lat | Coord_Long | Location                    | Decommisioned | TaxReturnsFiled | EstimatedPopulation | TotalWages |
