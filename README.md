@@ -73,57 +73,28 @@ mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_one.z
 ```
 
 mysql -u maxuser -pmaxpwd -h 127.0.0.1 -P 3306 -e "SELECT *  FROM zipcodes_two.zipcodes_two LIMIT 50;"
-+---------+-------------+---------------+-------+--------------+-----------+------------+------------------------+---------------+-----------------+---------------------+------------+
-| Zipcode | ZipCodeType | City          | State | LocationType | Coord_Lat | Coord_Long | Location               | Decommisioned | TaxReturnsFiled | EstimatedPopulation | TotalWages |
-+---------+-------------+---------------+-------+--------------+-----------+------------+------------------------+---------------+-----------------+---------------------+------------+
-|   42040 | STANDARD    | FARMINGTON    | KY    | PRIMARY      | 36.67     | -88.53     | NA-US-KY-FARMINGTON    | FALSE         | 465             | 896                 | 11562973   |
-|   41524 | STANDARD    | FEDSCREEK     | KY    | PRIMARY      | 37.4      | -82.24     | NA-US-KY-FEDSCREEK     | FALSE         |                 |                     |            |
-|   42533 | STANDARD    | FERGUSON      | KY    | PRIMARY      | 37.06     | -84.59     | NA-US-KY-FERGUSON      | FALSE         | 429             | 761                 | 9555412    |
-|   40022 | STANDARD    | FINCHVILLE    | KY    | PRIMARY      | 38.15     | -85.31     | NA-US-KY-FINCHVILLE    | FALSE         | 437             | 839                 | 19909942   |
-|   40023 | STANDARD    | FISHERVILLE   | KY    | PRIMARY      | 38.16     | -85.42     | NA-US-KY-FISHERVILLE   | FALSE         | 1884            | 3733                | 113020684  |
-|   41743 | PO BOX      | FISTY         | KY    | PRIMARY      | 37.33     | -83.1      | NA-US-KY-FISTY         | FALSE         |                 |                     |            |
-|   41219 | STANDARD    | FLATGAP       | KY    | PRIMARY      | 37.93     | -82.88     | NA-US-KY-FLATGAP       | FALSE         | 708             | 1397                | 20395667   |
-|   40935 | STANDARD    | FLAT LICK     | KY    | PRIMARY      | 36.82     | -83.76     | NA-US-KY-FLAT LICK     | FALSE         | 752             | 1477                | 14267237   |
-|   40997 | STANDARD    | WALKER        | KY    | PRIMARY      | 36.88     | -83.71     | NA-US-KY-WALKER        | FALSE         |                 |                     |            |
-|   41139 | STANDARD    | FLATWOODS     | KY    | PRIMARY      | 38.51     | -82.72     | NA-US-KY-FLATWOODS     | FALSE         | 3692            | 6748                | 121902277  |
-|   41526 | PO BOX      | FORDS BRANCH  | KY    | PRIMARY      | 37.32     | -82.57     | NA-US-KY-FORDS BRANCH  | FALSE         |                 |                     |            |
-|   42343 | STANDARD    | FORDSVILLE    | KY    | PRIMARY      | 37.63     | -86.71     | NA-US-KY-FORDSVILLE    | FALSE         | 735             | 1360                | 18216579   |
-|   42361 | STANDARD    | OLATON        | KY    | PRIMARY      | 37.53     | -86.7      | NA-US-KY-OLATON        | FALSE         |                 |                     |            |
-|   41527 | STANDARD    | FOREST HILLS  | KY    | PRIMARY      | 37.63     | -82.29     | NA-US-KY-FOREST HILLS  | FALSE         |                 |                     |            |
-|   42223 | STANDARD    | FORT CAMPBELL | KY    | PRIMARY      | 36.65     | -87.54     | NA-US-KY-FORT CAMPBELL | FALSE         | 6776            | 13815               | 129784441  |
-|   40121 | STANDARD    | FORT KNOX     | KY    | PRIMARY      | 37.89     | -85.96     | NA-US-KY-FORT KNOX     | FALSE         | 2833            | 6397                | 101583167  |
-|   40122 | STANDARD    | FORT KNOX     | KY    | PRIMARY      | 37.89     | -85.96     | NA-US-KY-FORT KNOX     | FALSE         |                 |                     |            |
-|   42133 | STANDARD    | FOUNTAIN RUN  | KY    | PRIMARY      | 36.72     | -85.96     | NA-US-KY-FOUNTAIN RUN  | FALSE         | 566             | 1042                | 12711806   |
-|   40939 | STANDARD    | FOURMILE      | KY    | PRIMARY      | 36.79     | -83.74     | NA-US-KY-FOURMILE      | FALSE         |                 |                     |            |
-|   40940 | STANDARD    | FRAKES        | KY    | PRIMARY      | 36.64     | -83.92     | NA-US-KY-FRAKES        | FALSE         |                 |                     |            |
-|   40601 | STANDARD    | FRANKFORT     | KY    | PRIMARY      | 38.19     | -84.86     | NA-US-KY-FRANKFORT     | FALSE         | 22938           | 39539               | 721803780  |
-|   40602 | PO BOX      | FRANKFORT     | KY    | PRIMARY      | 38.19     | -84.86     | NA-US-KY-FRANKFORT     | FALSE         | 562             | 872                 | 15398719   |
-|   40603 | PO BOX      | FRANKFORT     | KY    | PRIMARY      | 38.19     | -84.86     | NA-US-KY-FRANKFORT     | FALSE         |                 |                     |            |
-|   40604 | PO BOX      | FRANKFORT     | KY    | PRIMARY      | 38.19     | -84.86     | NA-US-KY-FRANKFORT     | FALSE         |                 |                     |            |
-|   40618 | UNIQUE      | FRANKFORT     | KY    | PRIMARY      | 38.19     | -84.86     | NA-US-KY-FRANKFORT     | FALSE         |                 |                     |            |
-|   40619 | UNIQUE      | FRANKFORT     | KY    | PRIMARY      | 38.19     | -84.86     | NA-US-KY-FRANKFORT     | FALSE         |                 |                     |            |
-|   40620 | UNIQUE      | FRANKFORT     | KY    | PRIMARY      | 38.19     | -84.86     | NA-US-KY-FRANKFORT     | FALSE         |                 |                     |            |
-|   40621 | UNIQUE      | FRANKFORT     | KY    | PRIMARY      | 38.19     | -84.86     | NA-US-KY-FRANKFORT     | FALSE         | 308             | 309                 | 429045     |
-|   40622 | UNIQUE      | FRANKFORT     | KY    | PRIMARY      | 38.19     | -84.86     | NA-US-KY-FRANKFORT     | FALSE         |                 |                     |            |
-|   42134 | STANDARD    | FRANKLIN      | KY    | PRIMARY      | 36.72     | -86.57     | NA-US-KY-FRANKLIN      | FALSE         | 7045            | 12759               | 204138728  |
-|   42135 | PO BOX      | FRANKLIN      | KY    | PRIMARY      | 36.72     | -86.57     | NA-US-KY-FRANKLIN      | FALSE         | 412             | 700                 | 11442122   |
-|   42411 | STANDARD    | FREDONIA      | KY    | PRIMARY      | 37.2      | -88.05     | NA-US-KY-FREDONIA      | FALSE         | 709             | 1340                | 19718071   |
-|   41528 | STANDARD    | FREEBURN      | KY    | PRIMARY      | 37.54     | -82.14     | NA-US-KY-FREEBURN      | FALSE         |                 |                     |            |
-|   40322 | STANDARD    | FRENCHBURG    | KY    | PRIMARY      | 37.95     | -83.62     | NA-US-KY-FRENCHBURG    | FALSE         | 1215            | 2297                | 29301156   |
-|   42041 | STANDARD    | FULTON        | KY    | PRIMARY      | 36.51     | -88.88     | NA-US-KY-FULTON        | FALSE         | 1884            | 3357                | 41829720   |
-|   42140 | STANDARD    | GAMALIEL      | KY    | PRIMARY      | 36.63     | -85.79     | NA-US-KY-GAMALIEL      | FALSE         | 505             | 948                 | 10871559   |
-|   40140 | STANDARD    | GARFIELD      | KY    | PRIMARY      | 37.78     | -86.35     | NA-US-KY-GARFIELD      | FALSE         | 303             | 590                 | 8251697    |
-|   41817 | STANDARD    | GARNER        | KY    | PRIMARY      | 37.35     | -82.92     | NA-US-KY-GARNER        | FALSE         |                 |                     |            |
-|   40941 | PO BOX      | GARRARD       | KY    | PRIMARY      | 37.12     | -83.74     | NA-US-KY-GARRARD       | FALSE         | 269             | 523                 | 4354249    |
-|   41630 | STANDARD    | GARRETT       | KY    | PRIMARY      | 37.48     | -82.83     | NA-US-KY-GARRETT       | FALSE         | 452             | 861                 | 12457690   |
-|   41632 | STANDARD    | GUNLOCK       | KY    | PRIMARY      | 37.54     | -82.92     | NA-US-KY-GUNLOCK       | FALSE         |                 |                     |            |
-|   41141 | STANDARD    | GARRISON      | KY    | PRIMARY      | 38.55     | -83.19     | NA-US-KY-GARRISON      | FALSE         | 935             | 1908                | 24423389   |
-|   41745 | STANDARD    | GAYS CREEK    | KY    | PRIMARY      | 37.33     | -83.4      | NA-US-KY-GAYS CREEK    | FALSE         |                 |                     |            |
-|   40324 | STANDARD    | GEORGETOWN    | KY    | PRIMARY      | 38.2      | -84.55     | NA-US-KY-GEORGETOWN    | FALSE         | 17361           | 32541               | 775385492  |
-|   42044 | STANDARD    | GILBERTSVILLE | KY    | PRIMARY      | 36.96     | -88.27     | NA-US-KY-GILBERTSVILLE | FALSE         | 1562            | 2844                | 50607538   |
-|   40943 | STANDARD    | GIRDLER       | KY    | PRIMARY      | 36.93     | -83.84     | NA-US-KY-GIRDLER       | FALSE         | 364             | 748                 | 9130115    |
-|   42131 | STANDARD    | ETOILE        | KY    | PRIMARY      | 36.81     | -85.91     | NA-US-KY-ETOILE        | FALSE         |                 |                     |            |
-|   42141 | STANDARD    | GLASGOW       | KY    | PRIMARY      | 36.99     | -85.92     | NA-US-KY-GLASGOW       | FALSE         | 12376           | 22835               | 367606457  |
-|   42142 | PO BOX      | GLASGOW       | KY    | PRIMARY      | 36.99     | -85.92     | NA-US-KY-GLASGOW       | FALSE         | 493             | 812                 | 12735248   |
-|   42156 | STANDARD    | LUCAS         | KY    | PRIMARY      | 36.88     | -86.03     | NA-US-KY-LUCAS         | FALSE         |                 |                     |            |
-+---------+-------------+---------------+-------+--------------+-----------+------------+------------------------+---------------+-----------------+---------------------+------------+
+10004 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	1967 	2909 	333623384
+10005 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	4697 	6293 	791578339
+10006 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	2236 	2849 	240075649
+10007 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	3551 	5396 	1143186856
+10008 	PO BOX 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	550 	732 	27103411
+10009 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	31275 	42731 	1572036810
+10010 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	17401 	22785 	2084544435
+10011 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	30434 	38784 	1264531973
+10012 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	13415 	17738 	1529644615
+10013 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	15981 	24199 	450956340
+10014 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	19374 	24292 	
+10016 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	31673 	40683 	1412438620
+10017 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	15803 	19975 	1685441363
+10018 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	4416 	5928 	810026753
+10019 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	24515 	31889 	
+10020 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	1134 	1926 	207363546
+10021 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.77 	-73.95 	NA-US-NY-NEW YORK 	FALSE 	29820 	42627 	1022024689
+10022 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	20815 	29014 	731534552
+10023 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	34334 	48044 	1270483799
+10024 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	31925 	47261 	1108944328
+10025 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	47778 	70190 	1675737238
+10026 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	16054 	24221 	647150670
+10027 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	25372 	37948 	918919244
+10028 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	25557 	36525 	964357485
+10029 	STANDARD 	NEW YORK 	NY 	PRIMARY 	40.71 	-73.99 	NA-US-NY-NEW YORK 	FALSE 	31490 	48403 	1050141146
